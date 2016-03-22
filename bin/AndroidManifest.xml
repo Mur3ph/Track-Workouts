@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.murph.athlasapp1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:debuggable="true"
+        >
+        
+         <uses-library android:name="com.google.android.maps" />
+         
+        <activity
+            android:name="com.murph.athlasapp1.Splash"
+            android:label="@string/app_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.murph.athlasapp1.Login"
+            android:label="@string/app_login">
+            <intent-filter>
+                <action android:name="com.murph.athlasapp1.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+                  android:name="com.murph.athlasapp1.Register"
+                  android:label="@string/app_reg">          
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.MainActivity"
+            android:label="@string/app_preferences" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Exercise1"
+            android:label="@string/app_timer" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Exercise2"
+            android:label="@string/app_map" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Exercise3"
+            android:label="@string/app_map" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Exercise4"
+            android:label="@string/app_map" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.WeatherForecast"
+            android:label="@string/app_weather" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Profile1"
+            android:label="@string/profilePage" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Profile2"
+            android:label="@string/profile_heading" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.ListAllRoutes"
+            android:label="@string/app_routes" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.Social1"
+            android:label="@string/app_message" >
+        </activity>
+        
+        <activity
+            android:name="com.murph.athlasapp1.ListAllAthletes"
+            android:label="@string/app_athletes" >
+        </activity>
+        
+         <activity
+            android:name="com.murph.athlasapp1.Welcome"
+            android:label="@string/app_welcome" >
+        </activity>
+        
+        <provider 
+            android:name="com.murph.content_providers.CommentsDataProvider"
+            android:exported="false"
+            android:authorities="com.murph.content_providers.CommentsDataProvider"
+            >
+        </provider>
+         
+    </application>
+
+</manifest>

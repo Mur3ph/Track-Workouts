@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="exercise">Exercise</string>
+    <string name="profile">Profile</string>
+    <string name="social">Social</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="countDownTimer">Count Down Timer</string>
+    <string name="timeStart">Time Start</string>
+    <string name="timeStop">Time Stop</string>
+    <string name="map">Track Me</string>
+    <string name="map2">D.A.C</string>
+     <string name="map3">Location</string>
+    <string name="save">Save</string>
+    <string name="send">Send Message!</string>
+    <string name="display">Display Messages!</string>
+   
+    <string name="overlay_label">Food</string>
+    <string name="access_label">Access</string>
+    <string name="route_label">Route</string>
+    
+    <string name="start_map">Start</string>
+    <string name="stop_map">Stop</string>
+    
+    <string name="btnweather">Weather</string>
+    
+    <string name="btnRun">Workouts</string>
+    
+</resources>

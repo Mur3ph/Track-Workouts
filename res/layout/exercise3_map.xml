@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="PxUsage" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapViewMain2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0yKaUZSnqCYV7GUYXBVZiYMQ2YU0IiefDJgqPcw"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <!-- Must replace apiKey above with appropriate one for your development machine -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0px" >
+
+        <Button
+            android:id="@+id/doOverlay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1.0"
+            android:text="@string/overlay_label"
+            android:textSize="12sp"
+            tools:ignore="PxUsage" />
+
+        <Button
+            android:id="@+id/doAccess"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/access_label"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/doRoute"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30px"
+            android:layout_weight="1.0"
+            android:text="@string/route_label"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnWeatherForecat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_weight="1.0"
+            android:text="@string/btnweather"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</FrameLayout>
